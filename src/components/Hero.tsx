@@ -35,7 +35,7 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className={`p-3 bg-card rounded-full border-2 border-primary hover:border-primary transition-all duration-300 ${social.color} hover:scale-110 hover:shadow-lg`}>
+                  className={`p-3  rounded-full border-2 border-primary bg-secondary hover:border-primary transition-all duration-300 ${social.color} text-primary hover:scale-110 hover:shadow-lg`}>
                   <social.icon className="w-5 h-5" />
                 </a>
               ))}

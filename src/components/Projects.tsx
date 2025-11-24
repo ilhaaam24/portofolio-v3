@@ -15,15 +15,15 @@ const Projects = () => {
       image: sewaMobilin,
     },
     {
-      title: "Paylio | E-Wallet Application",
+      title: "Bank Sha | E-Wallet Application",
       description: "Aplikasi e-wallet yang memudahkan pengguna dalam melakukan transaksi dan mengelola saldo.",
       tags: ["Flutter", "Laravel", "Bloc", "MySQL"],
       image: bankSha,
     },
     {
-      title: "Real Estate Management",
-      description: "Sistem manajemen properti dengan fitur listing, virtual tour, dan CRM untuk agen real estate.",
-      tags: ["Next.js", "PostgreSQL", "AWS"],
+      title: "Diary Food",
+      description: "Website komunitas untuk membagikan resep masakan dan berbagi pengalaman memasak.",
+      tags: ["Next Js","Tailwind CSS","Express Js", "Supabase"],
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
     },
     {

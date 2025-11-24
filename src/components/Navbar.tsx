@@ -76,13 +76,13 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 text-foreground hover:text-primary transition-colors" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+          <button className="md:hidden p-2 text-primary hover:text-primary transition-colors" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
-        <div className={cn("md:hidden overflow-hidden transition-all duration-300", isOpen ? "max-h-96 pb-6" : "max-h-0")}>
+        <div className={cn("md:hidden overflow-hidden transition-all duration-300", isOpen ? "max-h-[420px] pb-6" : "max-h-0")}>
           <div className="flex flex-col gap-4 pt-4">
             {menuItems.map((item) => (
               <a
@@ -92,11 +92,11 @@ const Navbar = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-foreground hover:text-primary transition-colors font-medium py-2 border-b border-border/50">
+                className="text-primary hover:bg-primary hover:text-secondary hover:pl-6 duration-500 ease-in-out transition-all  font-medium py-2 border-b border-border/50">
                 {item.label}
               </a>
             ))}
-            <Button onClick={() => scrollToSection("#contact")} className="bg-primary hover:bg-primary/90 w-full text-white">
+            <Button onClick={() => scrollToSection("#contact")} className="bg-primary hover:bg-primary/90 w-full text-primary">
               <span className="text-white">Hire Me</span>
             </Button>
           </div>

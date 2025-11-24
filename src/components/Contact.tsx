@@ -69,11 +69,11 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-primary mb-1">{info.title}</h3>
                       {info.link ? (
-                        <a href={info.link} className="text-muted-foreground hover:text-primary transition-colors">
+                        <a href={info.link} className="text-primary hover:text-primary transition-colors">
                           {info.value}
                         </a>
                       ) : (
-                        <p className="text-muted-foreground">{info.value}</p>
+                        <p className="text-primary">{info.value}</p>
                       )}
                     </div>
                   </div>
