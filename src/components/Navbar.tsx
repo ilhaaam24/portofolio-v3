@@ -18,7 +18,6 @@ const Navbar = () => {
   const menuItems = [
     { label: "Home", href: "#hero" },
     { label: "About", href: "#about" },
-    { label: "Tech Stack", href: "#tech-stack" },
     { label: "Services", href: "#services" },
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },

@@ -5,6 +5,8 @@ import { Badge } from "../components/ui/badge";
 import { ExternalLink, EyeIcon, Github, View } from "lucide-react";
 import sewaMobilin from "../assets/images/sewa-mobilin.png";
 import bankSha from "../assets/images/bank-sha.png";
+import diaryFood from "../assets/images/diary-food.png";
+import arenaku from "../assets/images/arenaku.png";
 
 const Projects = () => {
   const allProjects = [
@@ -24,13 +26,13 @@ const Projects = () => {
       title: "Diary Food",
       description: "Website komunitas untuk membagikan resep masakan dan berbagi pengalaman memasak.",
       tags: ["Next Js","Tailwind CSS","Express Js", "Supabase"],
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+      image: diaryFood,
     },
     {
-      title: "Social Media Dashboard",
-      description: "Dashboard analytics untuk mengelola multiple social media accounts dengan scheduling posts.",
-      tags: ["Vue.js", "Express", "MongoDB"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      title: "Arenaku",
+      description: "Website booking lapangan online yang memudahkan pengguna dalam mencari lapangan yang sesuai dengan kebutuhan mereka.",
+      tags: ["Laravel", "Tailwind", "MySQL","Midtrans"],
+      image: arenaku,
     },
     {
       title: "Learning Management System",
@@ -59,7 +61,6 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Latest Innovations</h2>
           <p className="text-primary text-lg max-w-2xl mx-auto">Highlighting top projects that blend elegant design with cutting-edge technology.</p>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {allProjects.slice(0, visibleProjects).map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-sm transition-all duration-300 group border-none text-primary bg-white  ">
