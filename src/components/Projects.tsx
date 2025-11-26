@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-import { ExternalLink, EyeIcon, Github, View } from "lucide-react";
+import { ExternalLink, EyeIcon } from "lucide-react";
 import sewaMobilin from "../assets/images/sewa-mobilin.png";
 import bankSha from "../assets/images/bank-sha.png";
 import diaryFood from "../assets/images/diary-food.png";
 import arenaku from "../assets/images/arenaku.png";
+import sahabatBuku from "../assets/images/sahabat-buku.png";
 
 const Projects = () => {
   const allProjects = [
@@ -25,26 +26,20 @@ const Projects = () => {
     {
       title: "Diary Food",
       description: "Website komunitas untuk membagikan resep masakan dan berbagi pengalaman memasak.",
-      tags: ["Next Js","Tailwind CSS","Express Js", "Supabase"],
+      tags: ["Next Js", "Tailwind CSS", "Express Js", "Supabase"],
       image: diaryFood,
     },
     {
       title: "Arenaku",
       description: "Website booking lapangan online yang memudahkan pengguna dalam mencari lapangan yang sesuai dengan kebutuhan mereka.",
-      tags: ["Laravel", "Tailwind", "MySQL","Midtrans"],
+      tags: ["Laravel", "Tailwind", "MySQL", "Midtrans"],
       image: arenaku,
     },
     {
-      title: "Learning Management System",
-      description: "Platform pembelajaran online dengan video courses, quiz, dan progress tracking untuk siswa.",
-      tags: ["React", "Django", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=600&fit=crop",
-    },
-    {
-      title: "Food Delivery App",
-      description: "Aplikasi food delivery dengan real-time tracking, payment integration, dan rating system.",
-      tags: ["React Native", "Node.js", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1526367790999-0150786686a2?w=800&h=600&fit=crop",
+      title: "Sahabat Buku | Library App",
+      description: "Aplikasi peminjaman buku sederhana - Submission Dicoding",
+      tags: ["Flutter", "Firebase", "GetX"],
+      image: sahabatBuku,
     },
   ];
 
