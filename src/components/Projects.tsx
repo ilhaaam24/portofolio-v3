@@ -68,7 +68,7 @@ const Projects = () => {
           {allProjects.slice(0, visibleProjects).map((project, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-sm transition-all duration-300 group border-none text-primary bg-white  ">
               <div className="relative  md:h-72 overflow-hidden">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-2">
                   <Button size="sm" variant="secondary" className="gap-2">
                     <ExternalLink className="w-4 h-4" />
