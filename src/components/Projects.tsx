@@ -3,11 +3,12 @@ import { Button } from "../components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
 import { ExternalLink, EyeIcon } from "lucide-react";
-import sewaMobilin from "../assets/images/sewa-mobilin.png";
-import bankSha from "../assets/images/bank-sha.png";
-import diaryFood from "../assets/images/diary-food.png";
-import arenaku from "../assets/images/arenaku.png";
-import sahabatBuku from "../assets/images/sahabat-buku.png";
+import sewaMobilin from "../assets/images/sewa-mobilin.webp";
+import bankSha from "../assets/images/bank-sha.webp";
+import diaryFood from "../assets/images/diaryfood.webp";
+import arenaku from "../assets/images/arenaku.webp";
+import sahabatBuku from "../assets/images/sahabat-buku.webp";
+import hotelLLuxury from "../assets/images/hotel-luxury.webp";
 
 const Projects = () => {
   const allProjects = [
@@ -41,11 +42,18 @@ const Projects = () => {
       tags: ["Flutter", "Firebase", "GetX"],
       image: sahabatBuku,
     },
+    {
+      title: "Hotel Luxury | Website Booking Hotel",
+      description: "Website booking hotel yang mengimplementasika mobile first design.",
+      tags: ["Laravel", "Tailwind", "MySQL",],
+      image: hotelLLuxury,
+    },
   ];
 
   const [visibleProjects, setVisibleProjects] = useState(3);
 
   const loadMore = () => {
+    
     setVisibleProjects((prev) => Math.min(prev + 3, allProjects.length));
   };
 
