@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Experiences from "../components/Experiences";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <TechStack />
       <Services />
       <Projects />
+      <Experiences />
       <Contact />
       <Footer />
     </div>

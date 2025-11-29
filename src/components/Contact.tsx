@@ -52,8 +52,8 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-foreground">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Hubungi Saya</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">Punya project atau pertanyaan? Jangan ragu untuk menghubungi saya</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Hubungi Saya</h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">Punya project atau pertanyaan? Jangan ragu untuk menghubungi saya</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -93,13 +93,13 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium text-foreground">
+                      <label htmlFor="name" className="text-sm font-medium text-primary">
                         Nama Lengkap
                       </label>
                       <Input id="name" name="name" placeholder="John Doe" value={formData.name} onChange={handleChange} required className="border border-gray-200 placeholder:text-gray-400 rounded-md" />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium text-foreground">
+                      <label htmlFor="email" className="text-sm font-medium text-primary">
                         Email
                       </label>
                       <Input id="email" name="email" type="email" placeholder="john@example.com" value={formData.email} onChange={handleChange} required className="border border-gray-200 placeholder:text-gray-400 rounded-md" />
@@ -107,14 +107,14 @@ const Contact = () => {
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium text-foreground">
+                    <label htmlFor="subject" className="text-sm font-medium text-primary">
                       Subject
                     </label>
                     <Input id="subject" name="subject" placeholder="Project Inquiry" value={formData.subject} onChange={handleChange} required className="border border-gray-200 placeholder:text-gray-400 rounded-md" />
                   </div>
 
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-foreground">
+                    <label htmlFor="message" className="text-sm font-medium text-primary">
                       Pesan
                     </label>
                     <Textarea
