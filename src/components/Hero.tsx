@@ -72,7 +72,7 @@ const Hero = () => {
                 <h2>experience</h2>
               </div>
               <div className="relative z-0 w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
-                <img src={profilePhoto} alt="Profile" className="w-full h-full object-cover" />
+                <img src={profilePhoto} alt="Profile" className="w-full h-full object-cover" loading="lazy" />
               </div>
             </div>
           </div>

@@ -44,7 +44,7 @@ const TechStack = () => {
         <div className="flex animate-infinite-scroll">
           {[...techStack, ...techStack].map((tech, index) => (
             <div key={`tech-2-${index}`} className="flex-shrink-0 mx-4 px-8 py-4 bg-card rounded-sm shadow-sm  hover:border-secondary transition-colors duration-300 flex items-center gap-2 bg-white">
-              <img src={tech.image} alt={tech.title} className="h-8 w-auto" />
+              <img src={tech.image} alt={tech.title} className="h-8 w-auto" width={"auto"} height={"auto"} />
               <span className="text-lg font-semibold text-primary whitespace-nowrap">{tech.title}</span>
             </div>
           ))}
@@ -56,7 +56,7 @@ const TechStack = () => {
         <div className="flex animate-infinite-scroll-reverse">
           {[...techStack.slice().reverse(), ...techStack.slice().reverse()].map((tech, index) => (
             <div key={`tech-2-${index}`} className="flex-shrink-0 mx-4 px-8 py-4 bg-card rounded-sm shadow-sm  hover:border-secondary transition-colors duration-300 flex items-center gap-2 bg-white">
-              <img src={tech.image} alt={tech.title} className="h-8" />
+              <img src={tech.image} alt={tech.title} className="h-8 w-auto" width={"auto"} height={"auto"} />
               <span className="text-lg font-semibold text-primary whitespace-nowrap">{tech.title}</span>
             </div>
           ))}
