@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/button";
 import { Instagram, Linkedin, Github, Mail } from "lucide-react";
-import profilePhoto from "../assets/images/profile.png";
+import profilePhoto from "../assets/images/profile.webp";
 
 const Hero = () => {
   const socialLinks = [
